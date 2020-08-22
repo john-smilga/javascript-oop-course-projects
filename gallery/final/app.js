@@ -92,6 +92,5 @@ Gallery.prototype.chooseImage = function (e) {
     e.target.classList.add('selected');
   }
 };
-
 const nature = new Gallery(getElement('.nature'));
 const city = new Gallery(getElement('.city'));
