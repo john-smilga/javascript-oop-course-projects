@@ -43,7 +43,7 @@ Gallery.prototype.openModal = function (selectedImage, list) {
     .map(function (image) {
       return `<img src="${
         image.src
-      }" title=${image.title} class="modal-img ${selectedImage.title === image.title ? 'selected' : undefined}" alt="" />`;
+      }" title=${image.title} class="${selectedImage.dataset.id === image.dataset.id ? 'selected modal-img' : 'modal-img'}" alt="" />`;
     })
     .join('');
   //setup modal
